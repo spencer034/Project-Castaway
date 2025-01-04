@@ -47,7 +47,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"Project Castaway",
   "resources":[
@@ -70,6 +70,7 @@
     {"id":{"name":"obj_rock_1","path":"objects/obj_rock_1/obj_rock_1.yy",},},
     {"id":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"TEST_DELETE_ME","path":"objects/TEST_DELETE_ME/TEST_DELETE_ME.yy",},},
     {"id":{"name":"rm_test_islands","path":"rooms/rm_test_islands/rm_test_islands.yy",},},
     {"id":{"name":"spr_base_camp","path":"sprites/spr_base_camp/spr_base_camp.yy",},},
     {"id":{"name":"spr_beehive","path":"sprites/spr_beehive/spr_beehive.yy",},},

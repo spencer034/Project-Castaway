@@ -71,6 +71,7 @@
     {"id":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"rm_test_islands","path":"rooms/rm_test_islands/rm_test_islands.yy",},},
+    {"id":{"name":"scr_item_functions","path":"scripts/scr_item_functions/scr_item_functions.yy",},},
     {"id":{"name":"spr_base_camp","path":"sprites/spr_base_camp/spr_base_camp.yy",},},
     {"id":{"name":"spr_beehive","path":"sprites/spr_beehive/spr_beehive.yy",},},
     {"id":{"name":"spr_blue_herb_bush","path":"sprites/spr_blue_herb_bush/spr_blue_herb_bush.yy",},},

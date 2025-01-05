@@ -30,3 +30,4 @@ global.player_hp = 100;
 
 alarm_set(0, 0);
 
+

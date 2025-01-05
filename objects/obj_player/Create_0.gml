@@ -26,5 +26,7 @@ global.attack_power = 0;
 
 global.sword_charge = 0;
 
+global.player_hp = 100;
+
 alarm_set(0, 0);
 

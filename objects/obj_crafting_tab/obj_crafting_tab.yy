@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_potion_pickup",
+  "%Name":"obj_crafting_tab",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_potion_pickup",
+  "name":"obj_crafting_tab",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item Pickups",
-    "path":"folders/Objects/Item Pickups.yy",
+    "name":"UI Buttons",
+    "path":"folders/Objects/UI Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_potion",
-    "path":"sprites/spr_potion/spr_potion.yy",
+    "name":"spr_crafting_tab",
+    "path":"sprites/spr_crafting_tab/spr_crafting_tab.yy",
   },
   "spriteMaskId":null,
   "visible":true,

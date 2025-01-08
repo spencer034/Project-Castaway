@@ -168,3 +168,8 @@ if obj_item_manager.inventory_open ==1
 	instance_create_layer(x, y, "instances_gui_buttons", obj_crafting_tab)
 	instance_create_layer(x, y, "instances_gui_buttons", obj_journal_tab)
 }
+
+
+
+
+

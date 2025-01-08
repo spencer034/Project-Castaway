@@ -154,3 +154,11 @@ if(global.power_shot > 0)
 	global.playerSpeed = 0;
 }
 
+
+
+
+//Bag logic
+if obj_item_manager.inventory_open ==1
+{
+	instance_create_layer(global.cam_x, global.cam_y, "instances_gui_buttons", obj_inv_tab	)
+}

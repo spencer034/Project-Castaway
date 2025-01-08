@@ -21,6 +21,7 @@
     {"$GMFolder":"","%Name":"Item Pickups","folderPath":"folders/Objects/Item Pickups.yy","name":"Item Pickups","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Meta Systems","folderPath":"folders/Objects/Meta Systems.yy","name":"Meta Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI Buttons","folderPath":"folders/Objects/UI Buttons.yy","name":"UI Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Crafting Buttons","folderPath":"folders/Objects/UI Buttons/Crafting Buttons.yy","name":"Crafting Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},

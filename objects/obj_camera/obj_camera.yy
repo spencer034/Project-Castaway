@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inv_tab",
+  "%Name":"obj_camera",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inv_tab",
+  "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI Buttons",
-    "path":"folders/Objects/UI Buttons.yy",
+    "name":"Meta Systems",
+    "path":"folders/Objects/Meta Systems.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_inventory_tab",
-    "path":"sprites/spr_inventory_tab/spr_inventory_tab.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

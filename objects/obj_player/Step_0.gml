@@ -1,3 +1,6 @@
+
+
+
 //Player Speed
 global.playerSpeed = 3 +(global.player_dodge * 4);
 
@@ -157,8 +160,11 @@ if(global.power_shot > 0)
 
 
 
+
 //Bag logic
 if obj_item_manager.inventory_open ==1
 {
-	instance_create_layer(global.cam_x, global.cam_y, "instances_gui_buttons", obj_inv_tab	)
+	instance_create_layer(x, y, "instances_gui_buttons", obj_inv_tab)
+	instance_create_layer(x, y, "instances_gui_buttons", obj_crafting_tab)
+	instance_create_layer(x, y, "instances_gui_buttons", obj_journal_tab)
 }

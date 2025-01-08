@@ -30,8 +30,8 @@ global.player_hp = 100;
 
 alarm_set(0, 0);
 
-global.cam_x = camera_get_view_x(view_camera[0])
-global.cam_y = camera_get_view_y(view_camera[0])
+global.cam_x =camera_get_view_x(view_camera[0])
+global.cam_y =camera_get_view_y(view_camera[0]) 
 
 
 

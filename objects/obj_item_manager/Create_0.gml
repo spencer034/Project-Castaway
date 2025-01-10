@@ -1,14 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0F65CD18
-/// @DnDArgument : "code" "depth = -9999$(13_10)inventory_open = 0$(13_10)bag = 0$(13_10)$(13_10)$(13_10)//item constructor$(13_10)function create_item(_name, _description, _spr, _effect, _quantity) constructor $(13_10){$(13_10)	name = _name;$(13_10)	description = _description;$(13_10)	icon = _spr;$(13_10)	effect = _effect$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)//create the items$(13_10)global.item_list = $(13_10){$(13_10)blue_herb : new create_item$(13_10)	("Blue Herb", "herb", spr_blue_herb, $(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=10$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	$(13_10)	),$(13_10)$(13_10)green_herb : new create_item$(13_10)	("Green Herb", "herb", spr_green_herb,$(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=10$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10)	$(13_10) potion : new create_item$(13_10)	("Potion", "A medicinal mixture to sooth minor wounds.", spr_potion,$(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=40	$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10) pepper_berry : new create_item$(13_10)	("Pepper Berry", "A soft, fleshy berry with a spicy kick.", spr_pepper_berry,$(13_10)	function()$(13_10)	{$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10) honey : new create_item$(13_10)	("Honey", "Sweet, sticky substance made by bees.", spr_honey,$(13_10)	function()$(13_10)	{$(13_10)		inv[selected_item] = global.item_list.null	$(13_10)	}$(13_10)	),$(13_10)	null : new create_item$(13_10)	("null", "null", spr_null,$(13_10)	function()$(13_10)	{$(13_10)	}$(13_10)	),$(13_10)}$(13_10)$(13_10)//Create the inventory$(13_10)inv = array_create(0);$(13_10)$(13_10)selected_item = 0$(13_10)$(13_10)max_inventory = 17$(13_10)$(13_10)$(13_10)$(13_10)//for drawing and mouse positions$(13_10)sep = 64$(13_10)screen_bord = 32$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)//initialize invenrtory with null item$(13_10)for (var i = 0; i < 18; i += 1)$(13_10){$(13_10)array_push(inv, global.item_list.null)$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)//initialize mouse position$(13_10)var mx = 0$(13_10)var my = 0$(13_10)"
-depth = -9999
-inventory_open = 0
-bag = 0
+/// @DnDArgument : "code" "$(13_10)$(13_10)//item constructor$(13_10)function create_item(_name, _description, _spr, _effect) constructor $(13_10){$(13_10)	name = _name;$(13_10)	description = _description;$(13_10)	icon = _spr;$(13_10)	effect = _effect$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)//create the items$(13_10)global.item_list = $(13_10){$(13_10)blue_herb : new create_item$(13_10)	("Blue Herb", "herb", spr_blue_herb, $(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=10$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	$(13_10)	),$(13_10)$(13_10)green_herb : new create_item$(13_10)	("Green Herb", "herb", spr_green_herb,$(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=10$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10)	$(13_10) potion : new create_item$(13_10)	("Potion", "A medicinal mixture to sooth minor wounds.", spr_potion,$(13_10)	function()$(13_10)	{$(13_10)		global.player_hp +=40	$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10) pepper_berry : new create_item$(13_10)	("Pepper Berry", "A soft, fleshy berry with a spicy kick.", spr_pepper_berry,$(13_10)	function()$(13_10)	{$(13_10)		inv[selected_item] = global.item_list.null$(13_10)	}$(13_10)	),$(13_10) honey : new create_item$(13_10)	("Honey", "Sweet, sticky substance made by bees.", spr_honey,$(13_10)	function()$(13_10)	{$(13_10)		inv[selected_item] = global.item_list.null	$(13_10)	}$(13_10)	),$(13_10)	null : new create_item$(13_10)	("", "", spr_null,$(13_10)	function()$(13_10)	{$(13_10)	}$(13_10)	),$(13_10)}$(13_10)$(13_10)//Create the inventory$(13_10)inv = array_create(0);$(13_10)$(13_10)selected_item = 0$(13_10)$(13_10)max_inventory = 17$(13_10)$(13_10)$(13_10)//initialize invenrtory with null item$(13_10)for (var i = 0; i < 18; i += 1)$(13_10){$(13_10)array_push(inv, global.item_list.null)$(13_10)}$(13_10)$(13_10)$(13_10)//initialize mouse position$(13_10)var mx = 0$(13_10)var my = 0$(13_10)$(13_10)//initialize inventory variables$(13_10)inventory_open = 0$(13_10)bag = 0$(13_10)$(13_10)//slot variables$(13_10)var row_1 = 640$(13_10)var row_2 = 720$(13_10)var row_3 = 800$(13_10)var column_1 = 38$(13_10)var column_2 = 118$(13_10)var column_3 = 198$(13_10)var column_4 = 278$(13_10)var column_5 = 358$(13_10)var column_6 = 438"
 
 
 //item constructor
-function create_item(_name, _description, _spr, _effect, _quantity) constructor 
+function create_item(_name, _description, _spr, _effect) constructor 
 {
 	name = _name;
 	description = _description;
@@ -63,7 +60,7 @@ green_herb : new create_item
 	}
 	),
 	null : new create_item
-	("null", "null", spr_null,
+	("", "", spr_null,
 	function()
 	{
 	}
@@ -78,14 +75,6 @@ selected_item = 0
 max_inventory = 17
 
 
-
-//for drawing and mouse positions
-sep = 64
-screen_bord = 32
-
-
-
-
 //initialize invenrtory with null item
 for (var i = 0; i < 18; i += 1)
 {
@@ -93,9 +82,21 @@ array_push(inv, global.item_list.null)
 }
 
 
-
-
-
 //initialize mouse position
 var mx = 0
 var my = 0
+
+//initialize inventory variables
+inventory_open = 0
+bag = 0
+
+//slot variables
+var row_1 = 640
+var row_2 = 720
+var row_3 = 800
+var column_1 = 38
+var column_2 = 118
+var column_3 = 198
+var column_4 = 278
+var column_5 = 358
+var column_6 = 438

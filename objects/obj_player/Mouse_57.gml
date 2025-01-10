@@ -15,9 +15,9 @@ if(global.player_character == 1){	/// @DnDAction : YoYo Games.Common.If_Variab
 		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos_relative" "1"
 		/// @DnDArgument : "objectid" "obj_projectile"
-		/// @DnDArgument : "layer" ""Instances_1""
+		/// @DnDArgument : "layer" ""instances_environment""
 		/// @DnDSaveInfo : "objectid" "obj_projectile"
-		instance_create_layer(x + 0, y + 0, "Instances_1", obj_projectile);
+		instance_create_layer(x + 0, y + 0, "instances_environment", obj_projectile);
 	
 		/// @DnDAction : YoYo Games.Common.Set_Global
 		/// @DnDVersion : 1

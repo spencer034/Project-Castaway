@@ -6,8 +6,8 @@
   "name":"obj_easy_terrain",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Environmental Decoration",
+    "path":"folders/Objects/Environmental Decoration.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_easy_terrain",
-    "path":"sprites/spr_easy_terrain/spr_easy_terrain.yy",
+    "name":"tile_shallow_water",
+    "path":"sprites/tile_shallow_water/tile_shallow_water.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -128,6 +128,7 @@
     {"id":{"name":"spr_rock_4","path":"sprites/spr_rock_4/spr_rock_4.yy",},},
     {"id":{"name":"spr_rock_5","path":"sprites/spr_rock_5/spr_rock_5.yy",},},
     {"id":{"name":"spr_rock_6","path":"sprites/spr_rock_6/spr_rock_6.yy",},},
+    {"id":{"name":"spr_selected_item","path":"sprites/spr_selected_item/spr_selected_item.yy",},},
     {"id":{"name":"spr_sword_counter","path":"sprites/spr_sword_counter/spr_sword_counter.yy",},},
     {"id":{"name":"spr_sword_strike","path":"sprites/spr_sword_strike/spr_sword_strike.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"group1",
-    "path":"folders/Sprites/Map Decoration/Flora/group1.yy",
+    "name":"Tiles",
+    "path":"folders/Sprites/Map Decoration/Tiles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

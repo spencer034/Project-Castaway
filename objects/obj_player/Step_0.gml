@@ -170,6 +170,6 @@ if obj_item_manager.inventory_open ==1
 }
 
 
-
+//dont make diagonal movement twice as fast
 
 

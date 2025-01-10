@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tile_shallow_water",
-    "path":"sprites/tile_shallow_water/tile_shallow_water.yy",
+    "name":"tile_easy_terrain",
+    "path":"sprites/tile_easy_terrain/tile_easy_terrain.yy",
   },
   "spriteMaskId":null,
   "visible":false,

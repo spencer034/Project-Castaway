@@ -10,12 +10,6 @@ if(global.playerSpeed < 0)
 }
 
 //Player Info
-global.player_image_angle = image_angle;
-
-global.player_y = y;
-
-global.player_x = x;
-
 
 global.player_attack_cooldown += -1;
 
@@ -25,7 +19,7 @@ if(global.player_attack_cooldown < 0)
 }
 
 //Easy Terrain
-if place_meeting(x,y, obj_easy_terrain)
+if place_meeting(x,y, (obj_easy_terrain))||place_meeting(x,y, (tile_sand))||place_meeting(x,y, (tile_grass))||place_meeting(x,y, (tile_mud))||place_meeting(x,y, (tile_mud))
 {
 	global.playerSpeed +=4;	
 }
@@ -71,6 +65,7 @@ if(global.player_stamina < 0)
 
 
 //Player Character Sprites
+{
 if(global.player_character == 0)
 {
 	sprite_index = spr_player_sword;
@@ -135,6 +130,7 @@ if(global.player_counter_timer > 0)
 	sprite_index = spr_sword_counter;
 	image_index += 0;
 }
+}
 
 
 //Hammer slowing
@@ -170,6 +166,41 @@ if obj_item_manager.inventory_open ==1
 }
 
 
-//dont make diagonal movement twice as fast
+//directions
+if(global.player_attack_cooldown <= 15)
+{
+if keyboard_check(ord("A"))
+{
+	dir = 6
+}
+if keyboard_check(ord("W"))
+{
+	dir = 8
+}
+if keyboard_check(ord("D"))
+{
+	dir = 2
+}
+if keyboard_check(ord("S"))
+{
+	dir = 4
+}
+if keyboard_check(ord("A")) && keyboard_check(ord("W"))
+{
+	dir = 7
+}
+if keyboard_check(ord("A")) && keyboard_check(ord("S"))
+{
+	dir = 5
+}
+if keyboard_check(ord("D")) && keyboard_check(ord("W"))
+{
+	dir = 1
+}
+if keyboard_check(ord("D")) && keyboard_check(ord("S"))
+{
+	dir = 3
+}
 
+}
 

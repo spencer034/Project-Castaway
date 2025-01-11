@@ -28,12 +28,17 @@ global.sword_charge = 0;
 
 global.player_hp = 100;
 
-alarm_set(0, 0);
+global.player_x = x
+global.player_y = y
 
-global.cam_x =camera_get_view_x(view_camera[0])
-global.cam_y =camera_get_view_y(view_camera[0]) 
+//alarm_set(0, 0);
 
-//initialize inventory with 18 null
+dir = 0
+
+
+
+
+
 
 
 

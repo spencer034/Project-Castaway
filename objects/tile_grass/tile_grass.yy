@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_easy_terrain",
+  "%Name":"tile_grass",
   "eventList":[],
   "managed":true,
-  "name":"obj_easy_terrain",
+  "name":"tile_grass",
   "overriddenProperties":[],
   "parent":{
     "name":"Tiles",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tile_easy_terrain",
-    "path":"sprites/tile_easy_terrain/tile_easy_terrain.yy",
+    "name":"tile_grass_1",
+    "path":"sprites/tile_grass_1/tile_grass_1.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

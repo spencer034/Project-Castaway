@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_easy_terrain",
+  "%Name":"tile_rock",
   "eventList":[],
   "managed":true,
-  "name":"obj_easy_terrain",
+  "name":"tile_rock",
   "overriddenProperties":[],
   "parent":{
     "name":"Tiles",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tile_easy_terrain",
-    "path":"sprites/tile_easy_terrain/tile_easy_terrain.yy",
+    "name":"rock",
+    "path":"sprites/rock/rock.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

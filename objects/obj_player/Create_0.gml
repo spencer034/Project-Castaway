@@ -35,6 +35,7 @@ global.player_y = y
 
 dir = 0
 
+click_direction = 0
 
 
 

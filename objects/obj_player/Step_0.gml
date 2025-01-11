@@ -204,3 +204,39 @@ if keyboard_check(ord("D")) && keyboard_check(ord("S"))
 
 }
 
+click_direction = point_direction(x,y,mouse_x,mouse_y)
+
+if mouse_check_button_pressed(mb_left)
+{
+	if click_direction >0
+	{
+		dir = 2	
+	}
+	if click_direction >22
+	{
+		dir = 1
+	}if click_direction > 67
+	{
+		dir = 8
+	}if click_direction >112
+	{
+		dir = 7
+	}
+	if click_direction >157
+	{
+		dir =6
+	}if click_direction >202
+	{
+		dir = 5
+	}if click_direction >247
+	{
+		dir = 4
+		if click_direction >292
+	{
+		dir = 3	
+	}if click_direction > 337
+	{
+		dir = 2	
+	}
+	}
+}

@@ -64,40 +64,6 @@ if(global.player_stamina < 0)
 }
 
 
-//Player Character Sprites
-{
-if(global.player_character == 0)
-{
-	sprite_index = spr_player_sword;
-	image_index = 0;
-}
-
-if(global.player_character == 1)
-{
-	sprite_index = spr_player_bow;
-	image_index = 0;
-}
-
-if(global.player_character == 2)
-{
-	sprite_index = spr_player_hammer;
-	image_index = 0;
-
-	if(global.player_attack_cooldown > 0)
-{
-	global.playerSpeed = 0;
-}
-}
-
-if(global.player_character > 2)
-{
-	global.player_character = 0;
-}
-
-if(global.player_character < 0)
-{
-	global.player_character = 2;
-}
 
 //Counter
 
@@ -130,7 +96,7 @@ if(global.player_counter_timer > 0)
 	sprite_index = spr_sword_counter;
 	image_index += 0;
 }
-}
+
 
 
 //Hammer slowing
@@ -240,3 +206,73 @@ if mouse_check_button_pressed(mb_left)
 	}
 	}
 }
+
+//moving
+{
+if keyboard_check(ord("A"))||keyboard_check(ord("W"))||keyboard_check(ord("S"))||keyboard_check(ord("D"))
+{
+	moving = 1
+}else{
+	moving = 0	
+}
+
+}
+	
+	
+//sprites
+{
+if dir = 8
+{
+	sprite_index = spr_default_run_8
+}
+if dir = 7
+{
+	sprite_index = spr_default_run_7
+}
+if dir = 6
+{
+	sprite_index = spr_default_run_6
+}
+if dir = 5
+{
+	sprite_index = spr_default_run_5
+}
+if dir = 4
+{
+	sprite_index = spr_default_run_4
+}
+if dir = 3
+{
+	sprite_index = spr_default_run_3
+}
+if dir = 2
+{
+	sprite_index = spr_default_run_2
+}
+if dir = 1
+{
+	sprite_index = spr_default_run_1
+}
+}
+	
+	
+//character looping
+{
+if global.player_character >2
+{
+	global.player_character=0	
+}
+if global.player_character <0
+{
+	global.player_character=2
+}
+}
+
+//stop animation when moving FIX WHEN I ADD IDLE ANIMATIONS
+{
+	if moving ==0
+	{
+	image_speed = 0
+	}
+}
+

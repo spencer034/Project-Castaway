@@ -1,17 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 48C05264
-/// @DnDArgument : "expr" "global.player_x"
-/// @DnDArgument : "var" "x"
-x = global.player_x;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 46DAA286
-/// @DnDArgument : "expr" "global.player_y"
-/// @DnDArgument : "var" "y"
-y = global.player_y;
-
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 30988232

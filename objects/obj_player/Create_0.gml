@@ -37,6 +37,10 @@ dir = 0
 
 click_direction = 0
 
+moving = 0
+
+image_speed = 1
+
 
 
 

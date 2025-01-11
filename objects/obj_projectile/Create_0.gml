@@ -7,9 +7,9 @@ speed = 15;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 1A21D38F
-/// @DnDArgument : "expr" "point_direction(global.player_x, global.player_y, mouse_x, mouse_y)"
+/// @DnDArgument : "expr" "point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)"
 /// @DnDArgument : "var" "direction"
-direction = point_direction(global.player_x, global.player_y, mouse_x, mouse_y);
+direction = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
